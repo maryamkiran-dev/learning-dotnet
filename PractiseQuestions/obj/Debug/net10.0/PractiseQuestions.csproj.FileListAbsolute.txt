@@ -1,0 +1,15 @@
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\bin\Debug\net10.0\PractiseQuestions.exe
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\bin\Debug\net10.0\PractiseQuestions.deps.json
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\bin\Debug\net10.0\PractiseQuestions.runtimeconfig.json
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\bin\Debug\net10.0\PractiseQuestions.dll
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\bin\Debug\net10.0\PractiseQuestions.pdb
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\obj\Debug\net10.0\PractiseQuestions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\obj\Debug\net10.0\PractiseQuestions.AssemblyInfoInputs.cache
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\obj\Debug\net10.0\PractiseQuestions.AssemblyInfo.cs
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\obj\Debug\net10.0\PractiseQuestions.csproj.CoreCompileInputs.cache
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\obj\Debug\net10.0\PractiseQuestions.sourcelink.json
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\obj\Debug\net10.0\PractiseQuestions.dll
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\obj\Debug\net10.0\refint\PractiseQuestions.dll
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\obj\Debug\net10.0\PractiseQuestions.pdb
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\obj\Debug\net10.0\PractiseQuestions.genruntimeconfig.cache
+C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\SharpConcepts\PractiseQuestions\obj\Debug\net10.0\ref\PractiseQuestions.dll
