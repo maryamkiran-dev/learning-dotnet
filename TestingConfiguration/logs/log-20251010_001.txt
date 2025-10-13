@@ -1,0 +1,255 @@
+2025-10-10 12:35:22.951 +05:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5229: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-10-10 12:39:13.940 +05:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5229: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-10-10 12:39:22.878 +05:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5229: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-10-10 12:40:29.867 +05:00 [INF] Now listening on: http://localhost:5229
+2025-10-10 12:40:29.924 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 12:40:29.926 +05:00 [INF] Hosting environment: Development
+2025-10-10 12:40:29.927 +05:00 [INF] Content root path: C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\TestingConfiguration
+2025-10-10 12:41:55.746 +05:00 [INF] Now listening on: http://localhost:5229
+2025-10-10 12:41:55.917 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 12:41:55.920 +05:00 [INF] Hosting environment: Development
+2025-10-10 12:41:55.920 +05:00 [INF] Content root path: C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\TestingConfiguration
+2025-10-10 12:41:56.405 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:41:56.621 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-10-10 12:41:56.636 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 null null 243.1068ms
+2025-10-10 12:41:56.650 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:41:59.102 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:41:59.120 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 null null 17.4661ms
+2025-10-10 12:41:59.123 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:42:08.690 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:42:08.717 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 null null 26.6375ms
+2025-10-10 12:42:08.720 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:43:59.790 +05:00 [INF] Now listening on: http://localhost:5229
+2025-10-10 12:43:59.851 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 12:43:59.852 +05:00 [INF] Hosting environment: Development
+2025-10-10 12:43:59.853 +05:00 [INF] Content root path: C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\TestingConfiguration
+2025-10-10 12:44:00.150 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:44:00.267 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at lambda_method1(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-10-10 12:44:00.347 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 500 null text/html; charset=utf-8 202.5403ms
+2025-10-10 12:44:00.367 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_vs/browserLink - null null
+2025-10-10 12:44:00.378 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-10 12:44:00.391 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 16525 application/javascript; charset=utf-8 12.5339ms
+2025-10-10 12:44:00.534 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_vs/browserLink - 200 null text/javascript; charset=UTF-8 167.6749ms
+2025-10-10 12:44:00.571 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/favicon.ico - null null
+2025-10-10 12:44:00.576 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at lambda_method1(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-10-10 12:44:00.580 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/favicon.ico - 500 null text/plain; charset=utf-8 9.3538ms
+2025-10-10 12:46:18.117 +05:00 [INF] Now listening on: http://localhost:5229
+2025-10-10 12:46:18.377 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:46:18.406 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 12:46:18.409 +05:00 [INF] Hosting environment: Development
+2025-10-10 12:46:18.420 +05:00 [INF] Content root path: C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\TestingConfiguration
+2025-10-10 12:46:18.695 +05:00 [INF] Executing endpoint 'HTTP: GET /'
+2025-10-10 12:46:18.711 +05:00 [INF] Executed endpoint 'HTTP: GET /'
+2025-10-10 12:46:18.777 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 302 null null 408.1346ms
+2025-10-10 12:46:18.790 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger - null null
+2025-10-10 12:46:18.801 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger - 301 null null 11.6888ms
+2025-10-10 12:46:18.824 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2025-10-10 12:46:18.940 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 115.7614ms
+2025-10-10 12:46:18.968 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui-bundle.js - null null
+2025-10-10 12:46:18.969 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-10 12:46:18.969 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-10 12:46:18.969 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_vs/browserLink - null null
+2025-10-10 12:46:18.978 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui.css - null null
+2025-10-10 12:46:18.985 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 16525 application/javascript; charset=utf-8 15.9479ms
+2025-10-10 12:46:19.026 +05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-10-10 12:46:19.033 +05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-10-10 12:46:19.059 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 90.3161ms
+2025-10-10 12:46:19.061 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-10-10 12:46:19.066 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui.css - 200 152034 text/css 88.2906ms
+2025-10-10 12:46:19.091 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.6207ms
+2025-10-10 12:46:19.099 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 130.4926ms
+2025-10-10 12:46:19.292 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2025-10-10 12:46:19.303 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/favicon-32x32.png - null null
+2025-10-10 12:46:19.372 +05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-10-10 12:46:19.374 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.0216ms
+2025-10-10 12:46:19.393 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/favicon-32x32.png - 200 628 image/png 90.2689ms
+2025-10-10 12:48:33.728 +05:00 [INF] Now listening on: http://localhost:5229
+2025-10-10 12:48:33.769 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 12:48:33.776 +05:00 [INF] Hosting environment: Development
+2025-10-10 12:48:33.780 +05:00 [INF] Content root path: C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\TestingConfiguration
+2025-10-10 12:49:00.598 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:49:00.677 +05:00 [INF] Executing endpoint 'HTTP: GET /'
+2025-10-10 12:49:00.679 +05:00 [INF] Executed endpoint 'HTTP: GET /'
+2025-10-10 12:49:00.691 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 302 0 null 99.0744ms
+2025-10-10 12:49:00.724 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2025-10-10 12:49:00.801 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 76.5488ms
+2025-10-10 12:49:01.073 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2025-10-10 12:49:01.204 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 130.2706ms
+2025-10-10 12:49:09.487 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/api/Info - null null
+2025-10-10 12:49:09.498 +05:00 [INF] Executing endpoint 'TestingConfiguration.Controllers.InfoController.Get (TestingConfiguration)'
+2025-10-10 12:49:09.514 +05:00 [INF] Route matched with {action = "Get", controller = "Info"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller TestingConfiguration.Controllers.InfoController (TestingConfiguration).
+2025-10-10 12:49:09.524 +05:00 [INF] Info endpoint hit at "2025-10-10T07:49:09.5245335Z"
+2025-10-10 12:49:09.533 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-10 12:49:09.549 +05:00 [INF] Executed action TestingConfiguration.Controllers.InfoController.Get (TestingConfiguration) in 24.7424ms
+2025-10-10 12:49:09.555 +05:00 [INF] Executed endpoint 'TestingConfiguration.Controllers.InfoController.Get (TestingConfiguration)'
+2025-10-10 12:49:09.559 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/api/Info - 200 null application/json; charset=utf-8 71.9629ms
+2025-10-10 12:49:11.276 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/api/Info - null null
+2025-10-10 12:49:11.289 +05:00 [INF] Executing endpoint 'TestingConfiguration.Controllers.InfoController.Get (TestingConfiguration)'
+2025-10-10 12:49:11.293 +05:00 [INF] Route matched with {action = "Get", controller = "Info"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller TestingConfiguration.Controllers.InfoController (TestingConfiguration).
+2025-10-10 12:49:11.300 +05:00 [INF] Info endpoint hit at "2025-10-10T07:49:11.3005151Z"
+2025-10-10 12:49:11.310 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-10 12:49:11.316 +05:00 [INF] Executed action TestingConfiguration.Controllers.InfoController.Get (TestingConfiguration) in 15.7044ms
+2025-10-10 12:49:11.322 +05:00 [INF] Executed endpoint 'TestingConfiguration.Controllers.InfoController.Get (TestingConfiguration)'
+2025-10-10 12:49:11.326 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/api/Info - 200 null application/json; charset=utf-8 49.4958ms
+2025-10-10 12:49:15.560 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2025-10-10 12:49:15.577 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 16.4586ms
+2025-10-10 12:49:15.656 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2025-10-10 12:49:15.680 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.247ms
+2025-10-10 12:52:40.561 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2025-10-10 12:52:40.587 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 26.5567ms
+2025-10-10 12:52:40.689 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2025-10-10 12:52:40.713 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.1203ms
+2025-10-10 12:54:44.081 +05:00 [INF] Now listening on: http://localhost:5229
+2025-10-10 12:54:44.173 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 12:54:44.175 +05:00 [INF] Hosting environment: Development
+2025-10-10 12:54:44.177 +05:00 [INF] Content root path: C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\TestingConfiguration
+2025-10-10 12:54:44.584 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:54:44.769 +05:00 [INF] Executing endpoint 'HTTP: GET /'
+2025-10-10 12:54:44.771 +05:00 [INF] Executed endpoint 'HTTP: GET /'
+2025-10-10 12:54:44.782 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 302 null null 205.2921ms
+2025-10-10 12:54:44.790 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2025-10-10 12:54:44.851 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 61.2872ms
+2025-10-10 12:54:44.875 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-10 12:54:44.875 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_vs/browserLink - null null
+2025-10-10 12:54:44.908 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 16525 application/javascript; charset=utf-8 33.9647ms
+2025-10-10 12:54:45.030 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_vs/browserLink - 200 null text/javascript; charset=UTF-8 154.4412ms
+2025-10-10 12:54:45.075 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2025-10-10 12:54:45.122 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.6321ms
+2025-10-10 13:00:44.961 +05:00 [INF] Now listening on: http://localhost:5229
+2025-10-10 13:00:45.028 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 13:00:45.030 +05:00 [INF] Hosting environment: Development
+2025-10-10 13:00:45.031 +05:00 [INF] Content root path: C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\TestingConfiguration
+2025-10-10 13:00:45.379 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 13:00:45.530 +05:00 [INF] Executing endpoint 'HTTP: GET /'
+2025-10-10 13:00:45.533 +05:00 [INF] Executed endpoint 'HTTP: GET /'
+2025-10-10 13:00:45.547 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 302 null null 178.0585ms
+2025-10-10 13:00:45.558 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2025-10-10 13:00:45.630 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 71.9193ms
+2025-10-10 13:00:45.652 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-10 13:00:45.653 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_vs/browserLink - null null
+2025-10-10 13:00:45.713 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 16525 application/javascript; charset=utf-8 60.7797ms
+2025-10-10 13:00:45.756 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_vs/browserLink - 200 null text/javascript; charset=UTF-8 102.8125ms
+2025-10-10 13:00:45.802 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2025-10-10 13:00:45.835 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.8548ms
+2025-10-10 13:03:33.851 +05:00 [INF] Now listening on: http://localhost:5229
+2025-10-10 13:03:33.980 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 13:03:34.021 +05:00 [INF] Hosting environment: Development
+2025-10-10 13:03:34.022 +05:00 [INF] Content root path: C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\TestingConfiguration
+2025-10-10 13:03:34.374 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 13:03:34.594 +05:00 [INF] Executing endpoint 'HTTP: GET /'
+2025-10-10 13:03:34.598 +05:00 [INF] Executed endpoint 'HTTP: GET /'
+2025-10-10 13:03:34.613 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 302 null null 245.5543ms
+2025-10-10 13:03:34.623 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2025-10-10 13:03:34.727 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 102.3461ms
+2025-10-10 13:03:34.767 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_vs/browserLink - null null
+2025-10-10 13:03:34.816 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-10 13:03:34.843 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 16525 application/javascript; charset=utf-8 27.9794ms
+2025-10-10 13:03:34.918 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_vs/browserLink - 200 null text/javascript; charset=UTF-8 151.5197ms
+2025-10-10 13:03:34.963 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2025-10-10 13:03:35.019 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.9156ms
+2025-10-10 13:04:36.918 +05:00 [INF] Now listening on: http://localhost:5229
+2025-10-10 13:04:36.968 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 13:04:36.974 +05:00 [INF] Hosting environment: Development
+2025-10-10 13:04:36.982 +05:00 [INF] Content root path: C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\TestingConfiguration
+2025-10-10 13:05:01.511 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 13:05:01.607 +05:00 [INF] Executing endpoint 'HTTP: GET /'
+2025-10-10 13:05:01.617 +05:00 [INF] Executed endpoint 'HTTP: GET /'
+2025-10-10 13:05:01.653 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 302 0 null 145.2629ms
+2025-10-10 13:05:01.716 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2025-10-10 13:05:01.870 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 154.1899ms
+2025-10-10 13:05:02.149 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2025-10-10 13:05:02.356 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 206.0885ms
+2025-10-10 13:07:50.248 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 13:07:50.358 +05:00 [INF] Executing endpoint 'HTTP: GET /'
+2025-10-10 13:07:50.373 +05:00 [INF] Executed endpoint 'HTTP: GET /'
+2025-10-10 13:07:50.481 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 302 0 null 233.4486ms
+2025-10-10 13:07:50.570 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2025-10-10 13:07:50.594 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 24.3541ms
+2025-10-10 13:07:50.824 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2025-10-10 13:07:50.860 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.2442ms
+2025-10-10 13:09:09.722 +05:00 [INF] Application is shutting down...

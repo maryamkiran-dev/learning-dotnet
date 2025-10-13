@@ -1,0 +1,95 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "TodoApi/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "12.0.0",
+          "FluentValidation.DependencyInjectionExtensions": "12.0.0",
+          "Microsoft.AspNetCore.OpenApi": "10.0.0-rc.1.25451.107",
+          "Microsoft.OpenApi": "2.1.0"
+        },
+        "runtime": {
+          "TodoApi.dll": {}
+        }
+      },
+      "FluentValidation/12.0.0": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/12.0.0": {
+        "dependencies": {
+          "FluentValidation": "12.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.OpenApi": "2.1.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.OpenApi/2.1.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TodoApi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentValidation/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "path": "fluentvalidation/12.0.0",
+      "hashPath": "fluentvalidation.12.0.0.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B28fBRL1UjhGsBC8fwV6YBZosh+SiU1FxdD7l7p5dGPgRlVI7UnM+Lgzmg+unZtV1Zxzpaw96UY2MYfMaAd8cg==",
+      "path": "fluentvalidation.dependencyinjectionextensions/12.0.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.OpenApi/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qDH09sfjprh4NnjJbg0LX07G/xFn1AEB4B0zphrWFkC/OhtJHv+MnGi2NU9KbXwnHedIBrmMDGt0MSD+Ipo53g==",
+      "path": "microsoft.aspnetcore.openapi/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.aspnetcore.openapi.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.OpenApi/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8eVvfjERqtZ+bwuX7HiKzbidCQSxBe86z6RSy7b9WJ35kMDtxUE6+sMXDMWXWOhrlIwid3MEpVvLSlI8vki7bQ==",
+      "path": "microsoft.openapi/2.1.0",
+      "hashPath": "microsoft.openapi.2.1.0.nupkg.sha512"
+    }
+  }
+}

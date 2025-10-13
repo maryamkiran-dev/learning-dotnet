@@ -1,0 +1,43 @@
+2025-10-10 12:32:20.922 +05:00 [INF] Now listening on: http://localhost:5229
+2025-10-10 12:32:20.951 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 12:32:20.952 +05:00 [INF] Hosting environment: Development
+2025-10-10 12:32:20.954 +05:00 [INF] Content root path: C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\TestingConfiguration
+2025-10-10 12:33:58.145 +05:00 [INF] Application is shutting down...
+2025-10-10 12:34:32.258 +05:00 [INF] Now listening on: http://localhost:5229
+2025-10-10 12:34:32.286 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 12:34:32.287 +05:00 [INF] Hosting environment: Development
+2025-10-10 12:34:32.294 +05:00 [INF] Content root path: C:\Users\NESTOSHCOM\Desktop\Dot Net Projects\TestingConfiguration
+2025-10-10 12:34:33.219 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:34:33.240 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-10-10 12:34:33.250 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 0 null 31.7382ms
+2025-10-10 12:34:33.263 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:34:36.309 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:34:36.318 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 0 null 8.7887ms
+2025-10-10 12:34:36.330 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:34:37.051 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:34:37.058 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 0 null 7.0583ms
+2025-10-10 12:34:37.067 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:34:37.547 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:34:37.559 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 0 null 11.5204ms
+2025-10-10 12:34:37.569 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:34:38.183 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:34:38.191 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 0 null 7.5315ms
+2025-10-10 12:34:38.198 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:34:40.833 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:34:40.842 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 0 null 9.3104ms
+2025-10-10 12:34:40.860 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:34:41.058 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:34:41.068 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 0 null 9.8316ms
+2025-10-10 12:34:41.082 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:34:41.274 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:34:41.283 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 0 null 8.1684ms
+2025-10-10 12:34:41.300 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:39:13.206 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:39:13.266 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 0 null 60.0477ms
+2025-10-10 12:39:13.474 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:39:22.537 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:39:22.613 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 0 null 75.2923ms
+2025-10-10 12:39:22.777 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
+2025-10-10 12:40:04.361 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/ - null null
+2025-10-10 12:40:04.373 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/ - 404 0 null 12.2939ms
+2025-10-10 12:40:04.510 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5229/, Response status code: 404
