@@ -1,0 +1,6 @@
+@JWT_Identity_Stage6_HostAddress = http://localhost:5186
+
+GET {{JWT_Identity_Stage6_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
