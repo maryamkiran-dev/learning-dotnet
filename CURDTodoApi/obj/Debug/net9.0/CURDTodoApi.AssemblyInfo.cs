@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CURDTodoApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ced04beb9ec3e2969c54047b765722f812db5467")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fd12968a8a0007267c221f47eaa5447f2aac198")]
 [assembly: System.Reflection.AssemblyProductAttribute("CURDTodoApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CURDTodoApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

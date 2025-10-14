@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CURDTodoApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251013140159_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20251014070311_ChangeToIntMigration")]
+    partial class ChangeToIntMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,9 +27,11 @@ namespace CURDTodoApi.Migrations
 
             modelBuilder.Entity("CURDTodoApi.Todo", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");

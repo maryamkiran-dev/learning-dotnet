@@ -1,6 +1,7 @@
 ﻿using CURDTodoApi;
 using FluentValidation;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args); 
@@ -43,7 +44,7 @@ app.Use(async (context, next) =>
     }
 });
 
-// --- CRUD Endpoints ---
+//Create
 app.MapPost("/todos", async (Todo dto, IValidator<Todo> validator,AppDbContext db) =>
 {
     ValidationResult result = await validator.ValidateAsync(dto);
@@ -54,8 +55,46 @@ app.MapPost("/todos", async (Todo dto, IValidator<Todo> validator,AppDbContext d
     await db.SaveChangesAsync();
     return Results.Created($"/todos/{todos.Count - 1}", dto);
 });
-
+//Read All
 app.MapGet("/todos", async (AppDbContext db) =>
  await db.Todos.ToListAsync()
 );
+//update
+app.MapPut("/todos/{id}", async (int id, Todo updatedTodo, IValidator<Todo> validator, AppDbContext db) =>
+    {
+        var todo = await db.Todos.FindAsync(id);
+        if(todo == null)
+        {
+            return Results.NotFound();
+        }
+
+        ValidationResult result = await validator.ValidateAsync(updatedTodo);
+        if (!result.IsValid)
+            return Results.BadRequest(result.Errors.Select(e => e.ErrorMessage));
+
+        todo.Title= updatedTodo.Title;
+        todo.IsCompleted= updatedTodo.IsCompleted;
+
+       await  db.SaveChangesAsync();
+        return Results.Ok(todo);
+
+    }
+
+);
+
+//Delete
+app.MapDelete("/todos/{id}", async (int id, AppDbContext db) =>
+{
+    var todo = await db.Todos.FindAsync(id);
+    if(todo == null )
+    {
+        return Results.NotFound();
+    }
+    db.Todos.Remove(todo);
+    await db.SaveChangesAsync();
+    return Results.NoContent(); 
+}
+);
+
+
  app.Run();
