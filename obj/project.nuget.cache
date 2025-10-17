@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "TQZRZ0/ercE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\NESTOSHCOM\\Desktop\\CQRS\\CQRS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NESTOSHCOM\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.9\\microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
+    "C:\\Users\\NESTOSHCOM\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
